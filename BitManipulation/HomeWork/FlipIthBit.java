@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class flipIthBit
+public class FlipIthBit
 {
     public static void main (String [] args)
     {
