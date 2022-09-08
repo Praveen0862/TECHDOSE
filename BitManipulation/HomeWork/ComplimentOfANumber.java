@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class complimentOfANumber 
+public class ComplimentOfANumber 
 {
     public static void main (String[] args) 
     {
