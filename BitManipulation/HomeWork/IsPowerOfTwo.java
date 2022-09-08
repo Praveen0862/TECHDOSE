@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class isPowerOfTwo 
+public class IsPowerOfTwo 
 {
     public static void main (String[] args) 
     {
