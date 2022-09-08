@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class swap
+public class Swap
 {
     public static void main (String [] args)
     {
