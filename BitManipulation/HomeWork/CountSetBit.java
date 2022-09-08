@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class countSetBit 
+public class CountSetBit 
 {
     public static void main (String[] args) 
     {
