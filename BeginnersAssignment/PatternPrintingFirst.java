@@ -12,13 +12,5 @@ public class PatternPrinting
 		    }
 		    System.out.println();
 		}
-		for (int i = N; i > 0; i--)
-		{
-		    for (int j = i; j > 0; j--)
-		    {
-		        System.out.print(j);
-		    }
-		    System.out.println();
-		}
 	}
 }
