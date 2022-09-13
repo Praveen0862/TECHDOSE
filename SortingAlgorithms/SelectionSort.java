@@ -13,12 +13,11 @@ public class SelectionSort
         }
         for (int i = 0; i < N; i++)
         {
-            int min = arr[i],minInd = i;
+            int minInd = i;
             for (int j = i+1; j < N; j++)
             {
-                if (arr[j] < min)
+                if (arr[j] < arr[minInd])
                 {
-                    min = arr[j];
                     minInd = j;
                 }
             }
