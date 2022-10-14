@@ -1,25 +1,17 @@
 class Solution {
-    public int mostFrequentEven(int[] nums) {
-        Arrays.sort(nums);
-        int i = 0,max = 0,length = nums.length,element = -1;
-        while (i < length)
+    public int partitionString(String s) {
+        HashSet<Character> h = new HashSet<Character>();
+        int length = s.length(),count = 0;
+        for (int i = 0; i < length; i++)
         {
-            if (nums[i]%2 == 0)
+            if (h.contains(s.charAt(i)))
             {
-                int j = i+1;
-                while (j < length && nums[i] == nums[j])
-                {
-                    j++;
-                }
-                if (j-i > max)
-                {
-                    max = j-i;
-                    element = nums[i];
-                }
-                i = j-1;
+                h.clear();
+                count++;
             }
-            i++;
+            h.add(s.charAt(i));
+            
         }
-        return element;
+        return count+1;
     }
 }
