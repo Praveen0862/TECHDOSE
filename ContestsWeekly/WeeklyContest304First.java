@@ -1,39 +1,36 @@
-
-
-int minimumOperations(int* arr, int numsSize){
-    int count = 0,min = 101,flag = 0;
-    for (int i = 0;i < numsSize; i++)
-    {
-        if (arr[i]!= 0)
+class Solution {
+    public int minimumOperations(int[] nums) {
+        int len = nums.length;
+        int min = minimum(nums),count = 0;
+        while (min > 0)
         {
-            flag = 1;
+            for (int i = 0; i < nums.length; i++)
+            {
+                if (nums[i] >= min)
+                {
+                    nums[i] -= min;
+                }
+            }
+            min = minimum(nums);
+            count++;
         }
+        return count;
     }
-    while(flag)
+    
+    public int minimum(int[] nums)
     {
-        flag = 0,min = 101;
-        for (int i = 0; i < numsSize; i++)
+        int min = 0;
+        for (int i = 0; i < nums.length; i++)
         {
-            if (arr[i] < min && arr[i] != 0)
+            if (min == 0)
             {
-                min = arr[i];
+                min = nums[i];
+            }
+            if (min > nums[i] && nums[i] > 0)
+            {
+                min = nums[i];
             }
         }
-        for (int i = 0; i < numsSize; i++)
-        {
-            if (arr[i] != 0)
-            {
-                arr[i]-=min;
-            }
-        }
-        for (int i = 0; i < numsSize; i++)
-        {
-            if (arr[i] != 0)
-            {
-                flag = 1;
-            }
-        }
-        count++;
+        return min;
     }
-    return count;
 }
