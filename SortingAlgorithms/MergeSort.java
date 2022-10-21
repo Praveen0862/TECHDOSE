@@ -41,7 +41,8 @@ public class MergeSort {
             Merge(arr,l,m,r);
         }
     }
-	public static void main(String[] args) {
+	public static void main(String[] args) 
+	{
 		Scanner sc=new Scanner(System.in);
 		int n=sc.nextInt();
 		int arr[]=new int[n];
@@ -52,10 +53,8 @@ public class MergeSort {
 		MergeSort ob=new MergeSort();
 		ob.Sort(arr,0,arr.length-1);
 		for(int i=0;i<n;i++)
-        {
-            System.out.print(arr[i]+" ");
-        }
-		
+        	{
+            		System.out.print(arr[i]+" ");
+        	}
 	}
-    
 }
