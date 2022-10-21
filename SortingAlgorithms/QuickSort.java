@@ -1,6 +1,4 @@
-package SORTINGALGORITHM;
 import java.util.*;
-
 public class QuickSort {
     int partition(int a[],int start,int end)
     {
@@ -20,7 +18,6 @@ public class QuickSort {
         a[i+1]=a[end];
         a[end]=t;
         return (i+1);
-
     }
     void quick(int a[],int start,int end)
     {
