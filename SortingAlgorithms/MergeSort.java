@@ -1,6 +1,4 @@
-package SortingAlgorithm;
 import java.util.*;
-
 public class MergeSort {
     void Merge(int arr[],int l,int m,int r)
     {
@@ -51,7 +49,7 @@ public class MergeSort {
 		{
 		    arr[i]=sc.nextInt();
 		}
-		mergeSort ob=new mergeSort();
+		MergeSort ob=new MergeSort();
 		ob.Sort(arr,0,arr.length-1);
 		for(int i=0;i<n;i++)
         {
