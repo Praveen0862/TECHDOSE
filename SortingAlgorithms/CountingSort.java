@@ -1,6 +1,4 @@
-package SORTINGALGORITHM;
 import java.util.*;
-
 public class CountingSort {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
@@ -15,7 +13,7 @@ public class CountingSort {
                 max=arr[i];
             }
         }
-        max=max+1;
+        max++;
         int has[]=new int[max];
         int ansArray[]=new int[n];
         for(int i=0;i<n;i++)
@@ -35,7 +33,5 @@ public class CountingSort {
         {
             System.out.print(ansArray[i]+" ");
         }
-
     }
-    
 }
